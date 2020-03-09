@@ -1,8 +1,8 @@
 const TwitchClient = require('twitch').default
 const HelixStream = require('twitch').HelixStream
 const WebHookListener = require('twitch-webhooks').default
-const PubSubClient = require('twitch-pubsub-client').default
-const { PubSubChatMessage } = require('twitch-pubsub-client')
+//const PubSubClient = require('twitch-pubsub-client').default
+//const { PubSubChatMessage } = require('twitch-pubsub-client')
 
 const { userId, clientId, secret } = require('./config')
 
