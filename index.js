@@ -19,7 +19,7 @@ async function isStreamLive(username) {
 	return stream !== null
 }
 
-isStreamLive('travisk_streams')
+console.log(isStreamLive('travisk_streams'))
 
 /**
  * twitch-webhooks
@@ -30,7 +30,7 @@ async function getSubscription() {
 	const listener = await WebHookListener.create(twitchClient, {
 		hostName: 'https://travisk.info/twitch-webhook',
 		port: 8090,
-		reverseProxy: { port: 443, ssl: true },
+		reverseProxy: { pathPrefix: '/twitch-webhook', port: 443, ssl: true },
 	})
 	listener.listen()
 
