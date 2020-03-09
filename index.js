@@ -79,5 +79,7 @@ await pubSubClient.registerUserListener(twitchClient)
 // waiting on response from discord channel for how to use
 // pub sub with chat messages and/or follows
 // https://discordapp.com/channels/325552783787032576/350012219003764748/686454266860142615
+// RESPONSE: https://discordapp.com/channels/325552783787032576/350012219003764748/686459560617443378
+// webhooks are the only option for follows, irc for chat
 
 // message eiymba github repo
